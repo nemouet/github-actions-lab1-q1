@@ -13,8 +13,8 @@ jobs:
       with:
         python-version: 3.8
     
-    - name: Chmod for file
-      run: chmod +x ./requirements.txt
+    - name: Checkout repo
+      uses: actions/checkout@v4
 
     - name: Install dependencies
       run: |
